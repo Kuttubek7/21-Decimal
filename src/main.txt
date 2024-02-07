@@ -1,0 +1,13 @@
+#include "s21_decimal.h"
+
+int main() {
+  s21_decimal a;
+  s21_decimal b;
+  s21_decimal res;
+  int pr;
+  s21_from_int_to_decimal(5421, &a);
+  s21_from_int_to_decimal(421, &b);
+  s21_mul(a, b, &res);  // 2 282 241
+  s21_from_decimal_to_int(res, &pr);
+  printf("%d", pr);
+}
